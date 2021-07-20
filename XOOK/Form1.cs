@@ -12,10 +12,26 @@ namespace XOOK
 {
     public partial class mainForm : System.Windows.Forms.Form
     {
+        int currentUser;
         public mainForm()
         {
             InitializeComponent();
         }
 
+        private void newGameButton_Click(object sender, EventArgs e)
+        {
+            InitGame();
+        }
+
+        private void InitGame()
+        {
+            CreateBoard();
+            currentUser = 1;
+        }
+
+        private void CreateBoard()
+        {
+            Console.WriteLine("Creearea matrici pentru joc")
+        }
     }
 }
